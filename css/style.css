@@ -3,3 +3,38 @@
 	margin:0;
 	padding:0;
 }
+
+.img-hover-container {
+	width:50%;
+	min-width:300px;
+	margin:20px auto;
+	position:relative;
+}
+
+.img-hover-container img {
+	width:100%;
+	transition: .5s;
+}
+
+.img-hover-container p {
+	color:#fff;
+	/*background-color:#fff;*/
+	font-size:16px;
+	position: absolute;
+	text-align:center;
+	width: 80%; 
+	left:10%;
+	bottom:20%;
+	padding: 10px;
+	opacity: 0;/*1 is visible */
+	transition: .5s;
+}
+
+.img-hover-container:hover img {
+	filter: brightness(50%);
+}
+
+.img-hover-container:hover p{
+	opacity: 1;
+	transition:.5s;
+}
